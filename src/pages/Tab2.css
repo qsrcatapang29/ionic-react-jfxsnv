@@ -1,0 +1,71 @@
+/* Style for the back button container */
+.custom-back-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8px; /* Slight margin for spacing */
+  padding: 4px 10px; /* Padding for a better clickable area */
+  border-radius: 8px; /* Rounded edges for a soft look */
+  transition: background-color 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+/* Add a hover effect for the back button */
+.custom-back-button:hover {
+  background-color: #491ee7; /* Light gray background */
+}
+
+/* Style for the back icon */
+.custom-back-icon {
+  font-size: 20px; /* Slightly larger icon */
+  color: rgb(255, 255, 255); /* Neutral color for better contrast */
+  transition: color 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+/* Icon color changes on hover */
+.custom-back-button:hover .custom-back-icon {
+  color: #000; /* Darker color on hover */
+}
+
+/* Styling for the IonButton */
+.custom-ion-button {
+  font-family: 'Poppins', sans-serif; /* Use a clean and modern font */
+  font-size: 1.4rem; /* Slightly larger font size */
+  font-weight: 600; /* Bold for better emphasis */
+  text-transform: uppercase; /* Uppercase for consistency */
+  padding: 0px 20px; /* Padding for the button */
+  height: 40px; /* Explicitly set the height of the button */
+  border-radius: 10px; /* Rounded corners */
+  transition: all 0.3s ease; /* Smooth transition for hover and active states */
+  --background: transparent; /* Override default background */
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  margin-bottom: 10px; /* Add margin to the bottom for spacing between buttons */
+}
+
+/* Custom button colors using CSS variables */
+.custom-ion-button.success {
+  --background: linear-gradient(135deg, #28a745, #218838); /* Green gradient */
+  --color: white; /* White text */
+}
+
+.custom-ion-button.warning {
+  --background: linear-gradient(135deg, #ffbb33, #e07b00); /* Yellow gradient */
+  --color: white; /* White text */
+}
+
+.custom-ion-button.danger {
+  --background: linear-gradient(135deg, #dc3545, #c82333); /* Red gradient */
+  --color: white; /* White text */
+}
+
+/* Hover effects */
+.custom-ion-button:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  --box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Add a stronger shadow on hover */
+}
+
+/* Active state (when the button is clicked) */
+.custom-ion-button:active {
+  transform: scale(0.98); /* Slightly shrink when pressed */
+  --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduce shadow on active */
+}
+

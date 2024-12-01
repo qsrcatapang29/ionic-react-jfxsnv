@@ -1,0 +1,229 @@
+/* General quiz content styling */
+.quiz-content {
+  background: #f3e5f5;  /* Light purple background */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Styling for quiz result (game over or quiz finished) */
+.quiz-result {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(145deg, #6a1b9a, #af27d4); /* Purple to pink gradient */
+  color: white;
+}
+
+.quiz-result h2 {
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.quiz-result .action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.quiz-result .action-buttons .ion-button {
+  font-size: 1.2rem;
+  padding: 12px 24px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.quiz-result .action-buttons .ion-button:hover {
+  transform: scale(1.05);
+}
+
+.quiz-result .action-buttons .ion-button:first-child {
+  background-color: #eaa4f7; /* Purple background for restart */
+  color: white;
+}
+
+.quiz-result .action-buttons .ion-button:last-child {
+  background-color: #1976d2; /* Blue background for back to menu */
+  color: white;
+}
+
+/* Styling for quiz status container */
+.quiz-status-container {
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  background: linear-gradient(145deg, #6a1b9a, #af27d4); 
+  max-width: 100%; /* Ensure full width on smaller screens */
+  margin: 10px auto; /* Center it horizontally with a margin */
+  text-align: center;
+  box-sizing: border-box; /* Ensure padding doesn't affect the width */
+}
+
+/* Styling for quiz status text */
+.quiz-status {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+  gap: 10px; /* Space between items */
+  font-size: 1rem; /* Smaller font size */
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.2;
+}
+
+/* Styling for individual quiz status items */
+.quiz-status-item {
+  padding: 8px 15px; /* Compact padding */
+  border-radius: 10px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  min-width: 120px; /* Ensure items have a minimum width */
+  white-space: nowrap; /* Prevent text from wrapping within items */
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+/* Different background colors for each status item */
+.quiz-status-item.score {
+  background-color: #4caf50; /* Green for score */
+}
+
+.quiz-status-item.best-score {
+  background-color: #2196f3; /* Blue for best score */
+}
+
+.quiz-status-item.question {
+  background-color: #ff9800; /* Orange for current question */
+}
+
+.quiz-status-item.time-left {
+  background-color: #f44336; /* Red for time left */
+}
+
+/* Optional hover effect for quiz status container */
+.quiz-status-container:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2); /* Enhance shadow effect on hover */
+  transform: translateY(-5px); /* Add subtle lift effect */
+  transition: all 0.3s ease-in-out; /* Smooth hover transition */
+}
+
+/* Optional text decoration or different color on hover */
+.quiz-status-container:hover .quiz-status {
+  color: #f1f1f1; /* Slightly change text color on hover */
+}
+
+/* Make sure the layout doesn't break on smaller screens */
+@media (max-width: 480px) {
+  .quiz-status {
+    font-size: 0.8rem; /* Adjust font size for smaller screens */
+    grid-template-columns: 1fr; /* Stack items vertically on mobile */
+  }
+
+  .quiz-status-item {
+    padding: 6px 12px; /* Adjust padding to be more compact */
+    min-width: 80px; /* Reduce the minimum width for smaller screens */
+  }
+}
+
+
+/* Styling for the question container */
+.question-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(145deg, #ffb0ee, #d7a6ff); /* Light purple to pink gradient */
+}
+
+.question-container h2 {
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.question-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 5px solid #9c27b0; /* Purple border for image */
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.question-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(156, 39, 176, 0.6); /* Purple shadow on hover */
+}
+
+/* Styling for the answer buttons */
+.answer-button {
+  font-family: 'Poppins', sans-serif; /* Use a clean and modern font */
+  font-size: 1.4rem; /* Slightly larger font size */
+  font-weight: 600; /* Bold for better emphasis */
+  text-transform: uppercase; /* Uppercase for consistency */
+  padding: 0px 20px; /* Padding for the button */
+  height: 40px; /* Explicitly set the height of the button */
+  border-radius: 10px; /* Rounded corners */
+  transition: all 0.3s ease; /* Smooth transition for hover and active states */
+  --background: transparent; /* Override default background */
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  margin-bottom: 10px; /* Add margin to the bottom for spacing between buttons */
+  border: none; /* Remove border from the buttons */
+}
+
+/* Custom button colors using CSS variables */
+.answer-button.correct {
+  --background: linear-gradient(135deg, #28a745, #218838); /* Green gradient for correct answers */
+  --color: white; /* White text */
+}
+
+.answer-button.incorrect {
+  --background: linear-gradient(135deg, #dc3545, #c82333); /* Red gradient for incorrect answers */
+  --color: white; /* White text */
+}
+
+.answer-button.default {
+  --background: linear-gradient(135deg, #1976d2, #1565c0); /* Blue gradient for default state */
+  --color: white; /* White text */
+}
+
+.answer-button:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  --box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Add a stronger shadow on hover */
+}
+
+.answer-button:active {
+  transform: scale(0.98); /* Slightly shrink when pressed */
+  --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduce shadow on active */
+}
+
+/* Disabled button styling (when game is over) */
+.answer-button[disabled] {
+  opacity: 0.5; /* Make disabled buttons semi-transparent */
+  cursor: not-allowed; /* Change cursor to indicate it's not clickable */
+  --box-shadow: none; /* Remove box shadow for disabled buttons */
+}
+
+
+/* Styling for selected answer text */
+.selected-answer {
+  font-size: 1.1rem;
+  margin-top: 15px;
+  display: block;
+  color: #1976d2; /* Blue color for selected answer text */
+}
+
+/* Transition effect for the status and result sections */
+.quiz-status-container, .quiz-result {
+  transition: all 0.3s ease;
+}
+
+

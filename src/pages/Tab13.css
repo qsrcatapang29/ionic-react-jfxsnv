@@ -1,0 +1,189 @@
+.dashboard-content {
+  background: linear-gradient(to right, #6A5ACD, #20B2AA);
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  }
+  .bubble-animation {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background:
+  url('https://www.transparenttextures.com/patterns/diag-stripes-light.png');
+  animation: floatBubbles 8s infinite ease-in-out;
+  opacity: 0.15;
+  pointer-events: none;
+  }
+  @keyframes floatBubbles {
+  0% { transform: translateY(0); opacity: 0.15; }
+  50% { transform: translateY(-20px); opacity: 0.3; }
+  100% { transform: translateY(0); opacity: 0.15; }
+  }
+  .feature-card {
+  background-color: #E0E0E0;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  }
+  .feature-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  border: 3px solid #FF6347;
+  }
+  .feature-card.feature-1 { background-image:url('https://www.pixelstalk.net/wp-content/uploads/2016/09/3D-Colorful-Alphabet-Wallpaper.jpg'); }
+  .feature-card.feature-2 { background-image:url('https://png.pngtree.com/background/20211217/original/pngtree-note-music-logo-watercolor-background-picture-image_1589075.jpg'); }
+  .feature-card.feature-3 { background-image:
+  url('https://img.freepik.com/premium-vector/views-hand-taking-notes-blank-notebook-simple-korean-style-illustration_142963-1233.jpg'); }
+  .feature-card.feature-4 { background-image:
+  url('https://img.freepik.com/premium-photo/open-book-with-magical-world-fairy-forest-generative-ai-1_73290-1371.jpg'); }
+  .feature-card.feature-5 { background-image:
+  url('https://sportshub.cbsistatic.com/i/2023/03/19/e3623b77-b331-456e-a043-4e61ef317e1c/game-show-quiz-show-television.jpg?width=1200'); }
+  .feature-card.feature-6 { background-image:
+  url('https://imgv3.fotor.com/images/share/three-cartoon-character-gaming-avatars.png')
+  ; }
+  .feature-card.feature-7 { background-image:
+  url('https://th.bing.com/th/id/OIP.ivI4Wii5TM_nmZbwTTJcnAAAAA?w=450&h=322&rs=1&pid=ImgDetMain'); }
+  .feature-card .dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+  border-radius: 15px;
+  }
+  .feature-card .text-content {
+  position: relative;
+  z-index: 2;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  padding: 5px;
+  border-radius: 5px;
+  background: none;
+  border: none;
+  }
+  .feature-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.6rem;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin-top: 10px;
+  font-weight: bold;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+  padding: 8px;
+  background: none;
+  border: none;
+  border-radius: 8px;
+  }
+  .feature-card p {
+  font-size: 1.1rem;
+  color: #FFFFFF;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+  margin-bottom: 15px;
+  z-index: 2;
+  padding: 5px;
+  background: none;
+  border: none;
+  border-radius: 5px;
+  }
+  button.features {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  transition: background-color 0.3s;
+  position: relative;
+  z-index: 2;
+  }
+  button.features:hover {
+  background-color: #388E3C;
+  }
+  .icon-container {
+  margin-bottom: 10px;
+  transition: transform 0.3s ease-in-out;
+  }
+  .feature-icon {
+  font-size: 4rem;
+  color: #99e89d;
+  transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  padding: 5px;
+  border-radius: 50%;
+  }
+  .feature-icon:hover {
+  transform: scale(1.15);
+  color: #D81B60;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+  }
+  IonCardHeader {
+  background: linear-gradient(45deg, #6A5ACD, #20B2AA);
+  color: white;
+  border-radius: 15px 15px 0 0;
+  padding: 15px;
+  font-family: 'Baloo 2', cursive;
+  font-size: 1.4rem;
+  text-align: center;
+  text-transform: uppercase;
+  box-shadow: 0 4px 8px rgba(106, 90, 205, 0.3);
+  }
+  @keyframes starConfetti {
+  0% { transform: translateY(-100px); opacity: 1; }
+  100% { transform: translateY(100vh); opacity: 0; }
+  }
+  .star-confetti {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: #6A5ACD;
+  border-radius: 50%;
+  animation: starConfetti 3s infinite ease-in-out;
+  opacity: 0.8;
+  }
+  .star-confetti:nth-child(odd) {
+  animation-duration: 4s;
+  animation-delay: 1s;
+  }
+  .star-confetti:nth-child(even) {
+  animation-duration: 3.5s;
+  animation-delay: 2s;
+  }
+  IonCardContent p {
+  font-size: 1.1rem;
+  font-family: 'Comic Sans MS', cursive;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+  }
+  IonContent {
+  padding: 10px;
+  background: #F0F0F0;
+  overflow: hidden;
+  position: relative;
+  }
+  .grid-container {
+  margin-top: 20px;
+  }
+  IonCol {
+  margin-bottom: 20px;
+  }
+  IonButton:active {
+  transform: scale(0.95);
+  }

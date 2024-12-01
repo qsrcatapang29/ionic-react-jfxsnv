@@ -1,0 +1,191 @@
+/* Importing Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Title Styling */
+.description-title {
+  font-family: 'Poppins', sans-serif; 
+  font-size: 1.6rem; 
+  font-weight: 600;
+  color: #FFFFFF; 
+  margin-bottom: 15px; 
+  text-align: center; 
+  letter-spacing: 1px; 
+  text-transform: uppercase; 
+  padding: 10px 15px; 
+  background: linear-gradient(135deg, rgb(253, 53, 220), rgb(106, 27, 154)); 
+  border-radius: 12px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  display: inline-block; 
+}
+
+
+/* Paragraph Styling */
+.description-text {
+  font-family: 'Comic Sans MS', cursive, sans-serif; 
+  font-size: 1rem;
+  color: rgb(58, 70, 180); 
+  text-align: center; 
+  line-height: 1.6; 
+  margin-bottom: 20px; /* Space below the paragraph */
+  padding: 0 20px; /* Add some padding on the sides for better alignment */
+}
+
+
+/* Simple IonToolbar styling */
+ion-toolbar {
+  --background: rgb(204, 42, 245); /* Light teal background for the toolbar */
+  --color: white; /* White text color */
+}
+
+/* Simple IonTitle styling */
+ion-title {
+  font-family: 'Poppins', sans-serif; /* Font family for the title */
+  font-size: 1.5rem; /* Font size for the title */
+  color: white; /* White text color */
+}
+
+
+/* General Page Background */
+.page-background {
+  background: linear-gradient(to right, #6A5ACD, #20B2AA);
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Category containers (Cards) */
+.category-container {
+  max-width: 300px; /* Smaller max width for each container */
+  margin: 10px auto; /* Center align and reduce margin */
+  padding: 10px; /* Smaller padding */
+  background-color: #ffffff; /* White background for each container */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  text-align: center; /* Center content */
+  cursor: pointer; /* Indicate clickability */
+  transition: transform 0.2s; /* Smooth hover effect */
+  margin-bottom: 20px; /* Added margin for space between cards */
+}
+
+.category-container:hover {
+  transform: scale(1.03); /* Slightly zoom on hover */
+}
+
+/* Category image styling */
+.category-image {
+  width: 100%; /* Keep image to container width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Rounded image corners */
+  margin-bottom: 8px; /* Space between image and title */
+}
+
+/* Category title styling */
+.category-title {
+  font-size: 16px; /* Slightly smaller font */
+  font-weight: bold;
+  color: #1b8845; /* Dark text for readability */
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Feature Card with background image */
+.feature-card {
+  background-color: #E0E0E0;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px; /* Added margin to create space between feature cards */
+}
+
+.feature-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  border: 3px solid #FF6347;
+}
+
+/* Feature card background images */
+.feature-card.feature-1 { background-image: url('https://i.pinimg.com/474x/12/75/7a/12757a8d3ace454e9cf427768f91f671.jpg'); }
+.feature-card.feature-2 { background-image: url('https://i.pinimg.com/474x/ce/6a/cd/ce6acd1a4fef3088a8e4dd8fc054f544.jpg'); }
+
+/* Dark overlay for feature card text */
+.feature-card .dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+  border-radius: 15px;
+}
+
+/* Text content in feature card */
+.feature-card .text-content {
+  position: relative;
+  z-index: 2;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  padding: 5px;
+  border-radius: 5px;
+  background: none;
+  border: none;
+  padding-bottom: 20px; /* Added padding to avoid the button being too close to the text */
+}
+
+/* Feature card title */
+.feature-title {
+  font-family: 'Dancing Script', cursive; /* Retain the elegant font */
+  font-size: 1.2rem; /* Prominent font size */
+  color: #FFFFFF; /* White text for contrast */
+  text-transform: uppercase; /* Uppercase for a clean and consistent look */
+  margin-top: 10px; /* Space above the title */
+  font-weight: bold; /* Bold styling for emphasis */
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7); /* Retain subtle shadow for readability */
+  padding: 12px 20px; /* Increase padding for balance */
+  background: linear-gradient(135deg, rgba(0, 123, 255, 0.85), rgba(255, 102, 204, 0.85)); /* Blue to pink gradient */
+  border-radius: 12px; /* Rounded edges for a modern look */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  text-align: center; /* Center-align the title */
+  display: inline-block; /* Wrap the background snugly around the text */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Add hover effect */
+.feature-title:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4); /* Enhance shadow on hover */
+}
+
+
+/* Content padding */
+IonContent {
+  padding: 10px;
+  background: #F0F0F0;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Responsive grid */
+.grid-container {
+  margin-top: 20px;
+}
+
+IonCol {
+  margin-bottom: 20px;
+}
+
+IonButton:active {
+  transform: scale(0.95);
+}
+
+
+

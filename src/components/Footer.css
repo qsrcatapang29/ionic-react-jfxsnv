@@ -1,0 +1,12 @@
+/* src/components/Footer.css */
+
+.footer-toolbar {
+  background-color: 7E60BF; /* Light gray background */
+  color: rgb(255, 255, 255); /* Dark text color */
+  justify-content: center; /* Center the text */
+}
+
+.footer-text {
+  font-size: 14px; /* Adjust font size */
+  text-align: center; /* Center the text */
+}
